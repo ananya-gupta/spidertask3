@@ -26,9 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    }
  }
 
-  echo $journal;
-echo $type;
-echo $location;
+ 
 if(isset($journal)&&isset($type)){
 	$sql2="UPDATE `spider`.`journals` SET journal='$journal',journal_type='$type',username='$email1' WHERE location='$location'";
 	$result2=mysql_query($sql2);
